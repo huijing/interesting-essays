@@ -12,7 +12,6 @@ module.exports = function(eleventyConfig) {
       "md",
       "njk"
     ],
-    pathPrefix: "/interesting-essays/",
     passthroughFileCopy: true,
     dir: {
       data: '../_data',

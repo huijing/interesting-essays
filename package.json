@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "gulp dev",
-    "build": "gulp build"
+    "build": "eleventy --pathprefix=interesting-essays"
   },
   "dependencies": {
     "@11ty/eleventy": "^0.10.0",
