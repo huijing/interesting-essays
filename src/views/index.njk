@@ -1,0 +1,19 @@
+---
+layout: base.njk
+css: front
+---
+<header>
+  <h1>Interesting essays</h1>
+</header>
+
+<main>
+  <ul class="grid">
+    {%- for post in collections.post | reverse -%}
+    <li class="grid__item">
+      <a href="{{ post.url | url }}">
+        <p>{{ post.data.title }}</p>
+      </a>
+    </li>
+    {%- endfor -%}
+  </ul>
+</main>

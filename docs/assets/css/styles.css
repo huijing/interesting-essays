@@ -1,0 +1,151 @@
+@font-face {
+  font-family: 'Linden Hill';
+  src: url("../fonts/linden_hill.eot");
+  src: url("../fonts/linden_hill.eot?#iefix") format("embedded-opentype"), url("../fonts/linden_hill.woff2") format("woff2"), url("../fonts/linden_hill.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Linden Hill';
+  src: url("../fonts/linden_hill_italic.eot");
+  src: url("../fonts/linden_hill_italic.eot?#iefix") format("embedded-opentype"), url("../fonts/linden_hill_italic.woff2") format("woff2"), url("../fonts/linden_hill_italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic; }
+
+:root {
+  font-size: 18px; }
+
+@media (min-width: 320px) and (max-width: 1280px) {
+  :root {
+    font-size: calc( 18px + (24 - 18) * ( (100vw - 320px) / ( 1280 - 320))); } }
+
+@media (min-width: 1280px) {
+  :root {
+    font-size: 24px; } }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+body {
+  min-height: 100vh;
+  font-family: "Linden Hill", "Georgia", serif; }
+
+@supports (display: grid) {
+  .grid {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(22ch, 1fr));
+    justify-items: center; }
+  .grid__item {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    justify-items: center;
+    text-align: center;
+    padding: 5vmin; } }
+
+header,
+footer {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  text-align: center; }
+
+footer {
+  padding: 0.25em 0; }
+
+h1 {
+  font-size: 141.4%; }
+  h1::before {
+    content: '';
+    display: block;
+    height: 4em;
+    width: 6em;
+    margin: 0 auto 5vh; }
+  h1::after {
+    content: '';
+    display: block;
+    background-color: black;
+    margin: 5vh auto;
+    height: 0.25em;
+    width: 10em;
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); }
+
+p {
+  line-height: 1.5;
+  margin-bottom: 1em; }
+
+a {
+  color: currentColor;
+  text-decoration: none; }
+
+blockquote {
+  font-style: italic;
+  font-size: 1.5em;
+  color: #666;
+  padding: 0 1em; }
+  blockquote p {
+    line-height: 1.2;
+    margin-bottom: 0.75em; }
+  blockquote small {
+    font-size: 75%; }
+
+.front main {
+  min-height: calc(100vh - 1em); }
+
+.front h1::before {
+  background: url("../img/writing.png") center no-repeat;
+  background-size: contain;
+  margin-top: 1em; }
+
+.front h1 {
+  text-transform: uppercase; }
+
+.front ul {
+  list-style: none; }
+
+.front p {
+  margin: 0; }
+
+body:not(.front) main {
+  margin: 0.5em auto;
+  padding: 0.5em;
+  max-width: 33em; }
+
+body:not(.front) header {
+  margin-top: 1em;
+  height: 45vh; }
+
+body:not(.front) h1::before {
+  background: url("../img/lighthouse.png") center no-repeat;
+  background-size: contain; }
+
+article a {
+  border-bottom: 1px dashed;
+  -webkit-transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s; }
+  article a:hover {
+    background-color: black;
+    color: white;
+    border-color: transparent; }
+
+.home {
+  font-style: italic;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  border-bottom: 2px solid; }

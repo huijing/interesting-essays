@@ -1,0 +1,16 @@
+{
+  "title": "Interesting essays",
+  "url": "https://www.chenhuijing.com/interesting-essays",
+  "description": "Collection of interesting essays found online with slightly better typesetting than the original",
+  "feed": {
+    "subtitle": "Collection of interesting essays found online with slightly better typesetting than the original",
+    "filename": "feed.xml",
+    "path": "/feed.xml",
+    "url": "https://www.chenhuijing.com/interesting-essays/feed.xml",
+    "id": "https://www.chenhuijing.com/interesting-essays/"
+  },
+  "author": {
+    "name": "Chen Hui Jing",
+    "email": "kakyou_tensai@yahoo.com"
+  }
+}
