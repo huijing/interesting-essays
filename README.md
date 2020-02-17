@@ -6,6 +6,8 @@ All essays will be linked to their original sources.
 
 As an aside, a number of people excel at typesetting on the web, one of my favourites in this department is [Robin Rendle](https://www.robinrendle.com/essays/) (see [Systems, Mistakes, and the Sea](https://www.robinrendle.com/essays/systems-mistakes-and-the-sea) as a great example of his excellent work).
 
+*Update: have expanded this to include published short stories not because they are not typeset well, I just want a place to store them* ¯\\\_(ツ)_/¯
+
 ## Local development
 
 1. `git clone git@github.com:huijing/interesting-essays.git`
